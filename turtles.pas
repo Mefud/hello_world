@@ -4,12 +4,16 @@ var
 begin
    writeln('What is your name?');
    read(m);
-   if m = 'Nikita' then
-      writeln('Yes, you are Leonardo!');
-   if m = 'Egor' then
+   case m of
+   'Nikita':
+      writeln('Yes, you are Leonardo!');   
+   'Egor':
       writeln('Eee boy! You - Donatello!');
-   if m = 'Pavel' then
+   'Pavel':
       writeln('Fucking shit! You are Raf!');
-   if m = 'Ivan' then
+   'Ivan':
       writeln('Yahoo!!!! You are Miky! KAVABANGA!!!')
+   else
+      writeln('You are not a ninja turtle')
+   end
 end.
